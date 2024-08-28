@@ -249,3 +249,34 @@
   border-radius: var(--corner-roundness);
   position: relative;
 }
+
+/* Case study Section Styling Here */
+.case-study-section {
+  padding: var(--section-spacing);
+}
+
+.case-study-section h3 {
+  font-size: 2.5rem;
+}
+
+.casestudy-cards-warpper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.case-study-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: 2rem;
+  border-radius: var(--corner-roundness);
+  min-height: 21rem;
+  overflow: hidden;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.case-study-card img {
+  width: 100%;
+  height: auto;
+}
