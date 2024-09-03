@@ -40,6 +40,7 @@ setIcon("timelyDelivery", "#4361ee", ".timely-delivery");
 setIcon("quickResponses", "#4361ee", ".quick-responses");
 setIcon("budgetFriendly", "#4361ee", ".budget-friendly");
 setIcon("elearningExperts", "#4361ee", ".elearning-experts");
+console.log(setIcon("nextArrow", "#4361ee", ".goto-source"));
 
 //Logo Carousel Swiper Here
 const leftClient = document.querySelector(".swiper .left-carousel");
