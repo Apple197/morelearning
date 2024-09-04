@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morelearning</title>
     <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <main>
+
+           <!-- Here is the Header Section -->
+    <header id="header"></header>
+    <div class="for-active-nav"></div>
+
+     
+
         <!-- Here is the hero section -->
         <section class="hero-section">
             <div class="container px-4">
@@ -52,15 +60,15 @@
                     <div class="col-lg-8">
                         <div class="hlighlighs text-md-center">
                             <div class="experience">
-                                <p>12+</p>
+                                <p data-target="12">0</p>
                                 <span>Year's Experience</span>
                             </div>
                             <div class="project">
-                                <p>750+</p>
+                                <p data-target="750">0</p>
                                 <span>Projects completed</span>
                             </div>
                             <div class="clients">
-                                <p>200+</p>
+                                <p data-target="200">0</p>
                                 <span>Certified Clients</span>
                             </div>
                         </div>
@@ -397,21 +405,21 @@
                     <div class="col-12">
                         <div class="blog-post-cards">
                             <div class="blog-post-card">
-                                <img src="https://picsum.photos/200/300?grayscale" alt="Image">
+                                <img src="/assets/images/blog1.webp" alt="Image">
                                 <h4>Title of the blog</h4>
                                 <p>It is a long established fact that a reader will be distracted by the readable
                                     content of a page when looking at its layout.</p>
                                 <a href="#" id="learn-button" class="black">Learn more</a>
                             </div>
                             <div class="blog-post-card">
-                                <img src="https://picsum.photos/id/237/200/300" alt="Image">
+                                <img src="/assets/images/blog1.webp" alt="Image">
                                 <h4>Title of the blog</h4>
                                 <p>It is a long established fact that a reader will be distracted by the readable
                                     content of a page when looking at its layout.</p>
                                 <a href="#" id="learn-button" class="black">Learn more</a>
                             </div>
                             <div class="blog-post-card">
-                                <img src="https://picsum.photos/id/237/200/300" alt="Image">
+                                <img src="/assets/images/blog1.webp" alt="Image">
                                 <h4>Title of the blog</h4>
                                 <p>It is a long established fact that a reader will be distracted by the readable
                                     content of a page when looking at its layout.</p>
@@ -469,6 +477,7 @@
         </div>
 
     </main>
+
     <script type="module" src="assets/index.js" defer></script>
 </body>
 
