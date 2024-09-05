@@ -1,4 +1,6 @@
 /* Here is the header section style part */
+
+/* Here is the header section style part */
 #header {
   position: fixed;
   z-index: 999;
@@ -37,7 +39,7 @@
   text-decoration: none;
   font-family: var(--font-family);
   font-weight: 500;
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 1.1rem;
   line-height: 1;
   transition: 0.6s ease;
