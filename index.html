@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morelearning</title>
     <link rel="stylesheet" href="assets/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <main>
+
+           <!-- Here is the Header Section -->
+    <header id="header"></header>
+    <div class="for-active-nav"></div>
+
+     
+
         <!-- Here is the hero section -->
         <section class="hero-section">
             <div class="container px-4">
@@ -52,15 +60,15 @@
                     <div class="col-lg-8">
                         <div class="hlighlighs text-md-center">
                             <div class="experience">
-                                <p>12+</p>
+                                <p data-target="12">0</p>
                                 <span>Year's Experience</span>
                             </div>
                             <div class="project">
-                                <p>750+</p>
+                                <p data-target="750">0</p>
                                 <span>Projects completed</span>
                             </div>
                             <div class="clients">
-                                <p>200+</p>
+                                <p data-target="200">0</p>
                                 <span>Certified Clients</span>
                             </div>
                         </div>
@@ -383,7 +391,93 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Here is the blog section -->
+        <div class="blog-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center mx-auto">
+                        <h3>Blog</h3>
+                        <p>Welcome to the More eLearning blog, your One-stop shop for all training things. Explore
+                            eLearning with insights, tips, and trends.</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="blog-post-cards">
+                            <div class="blog-post-card">
+                                <img src="/assets/images/blog1.webp" alt="Image">
+                                <h4>Title of the blog</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.</p>
+                                <a href="#" id="learn-button" class="black">Learn more</a>
+                            </div>
+                            <div class="blog-post-card">
+                                <img src="/assets/images/blog1.webp" alt="Image">
+                                <h4>Title of the blog</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.</p>
+                                <a href="#" id="learn-button" class="black">Learn more</a>
+                            </div>
+                            <div class="blog-post-card">
+                                <img src="/assets/images/blog1.webp" alt="Image">
+                                <h4>Title of the blog</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout.</p>
+                                <a href="#" id="learn-button" class="black">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- //Footer -->
+
+        <div class="footer-section">
+            <div class="container px-4">
+
+                <div class="footer-grid">
+                    <div class="footer-info">
+                        <img src="/morelearning/assets/images/morelearnignwhitelogo.svg" alt="">
+                        <p>We are a creative agency working globally, helping organizations across many industries
+                            succeed at telling their story.</p>
+                        <input placeholder="Subscribe to our Newsletter*" type="text" name="" id="">
+                    </div>
+                    <div class="footer-links ">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Case studies</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>For creators</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Platform</a></li>
+                            <li><a href="#">Community</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Phone</a></li>
+                            <li><a href="#">Address</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>s
+        </div>
+
     </main>
+
     <script type="module" src="assets/index.js" defer></script>
 </body>
 

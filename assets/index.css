@@ -3,6 +3,8 @@
 @import "./font/font.css";
 @import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
 
+@import "./responsive.css";
+
 /* CSS Variables Declaration Here */
 :root {
   --primary-color: #4361ee;
