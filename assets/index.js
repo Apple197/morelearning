@@ -159,13 +159,10 @@ const TruetedBy = new Swiper(".swiper .left-carousel", {
   speed: 3000,
 });
 
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> 0abd3d957f6b6355b6745c44c8a443ab6caa4e8c
 function getWebLink(pageUrl, which = "email") {
   if (which === "pages") {
     return `${window.location.protocol}//${window.location.host}/${pageUrl}`;
@@ -177,7 +174,6 @@ function getWebLink(pageUrl, which = "email") {
     return `mailto:${pageUrl}`;
   }
 }
-<<<<<<< HEAD
 
 //Get all url
 const relURL = {
@@ -226,5 +222,3 @@ const logoRefLink = document.querySelector(".site-logo");
 logoRefLink.addEventListener("click", () => {
   window.location.href = relURL.Home;
 });
-=======
->>>>>>> 0abd3d957f6b6355b6745c44c8a443ab6caa4e8c
