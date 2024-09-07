@@ -225,5 +225,71 @@
       justify-items: center;
       margin-top: 50px;
     }
+
+    .address span {
+      margin-left: 2.8rem;
+    }
   }
 }
+
+
+
+@media (max-width: 576px) {
+  .left-box h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
+  .left-box .logos-section svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    width: 80%;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .main-content p {
+    margin-bottom: 2rem;
+  }
+  .contact-email {
+    margin-bottom: 2rem;
+  }
+  .contact span,
+  .email span {
+    font-size: 0.8rem;
+  }
+  .contact h5,
+  .email h5 {
+    font-size: 1rem;
+  }
+  .col-md-3 span {
+    font-size: 1rem;
+  }
+  .address {
+    gap: 1rem;
+  }
+  .left-box {
+    margin-bottom: 2rem;
+  }
+  .right-box {
+    margin: 0 12px;
+  }
+  .right-box label {
+    font-size: 1rem;
+  }
+  .right-box input,
+  .details-message textarea {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .address img {
+    height: 1.5rem;
+  }
+  .address span {
+    margin-left: 2rem;
+  }
+}
+

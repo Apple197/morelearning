@@ -1,0 +1,359 @@
+
+== Server Environment ==
+	Operating System: Linux
+	Software: nginx/1.25.5
+	MySQL version: mariadb.org binary distribution v10.11.5-MariaDB-1:10.11.5+maria~ubu2004
+	PHP Version: 8.1.29
+	PHP Memory Limit: 256M
+	PHP Max Input Vars: 10000
+	PHP Max Post Size: 128M
+	GD Installed: Yes
+	ZIP Installed: Yes
+	Write Permissions: All right
+	Elementor Library: Connected
+
+== WordPress Environment ==
+	Version: 6.6.1
+	Site URL: https://staffdevelopmentsolutions.com
+	Home URL: https://staffdevelopmentsolutions.com
+	WP Multisite: No
+	Max Upload Size: 128 MB
+	Memory limit: 256M
+	Max Memory limit: 256M
+	Permalink Structure: /%postname%/
+	Language: en_US
+	Timezone: America/New_York
+	Admin Email: crcmanha@mlnha.org
+	Debug Mode: Inactive
+
+== Theme ==
+	Name: Twenty Twenty-One
+	Version: 2.3
+	Author: the WordPress team
+	Child Theme: No
+
+== User ==
+	Role: administrator
+	WP Profile lang: en-US
+	User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+
+== Active Plugins ==
+	Design Upgrade Pro for LearnDash
+		Version: 2.21.1
+		Author: Escape Creative
+
+	Elementor
+		Version: 3.23.4
+		Author: Elementor.com
+
+	Elementor Pro
+		Version: 3.23.3
+		Author: Elementor.com
+
+	Essential Addons for Elementor
+		Version: 6.0.0
+		Author: WPDeveloper
+
+	Insert PHP Code Snippet
+		Version: 1.3.7
+		Author: xyzscripts.com
+
+	Jetpack
+		Version: 13.8
+		Author: Automattic
+
+	JetWooBuilder For Elementor
+		Version: 1.10.5
+		Author: Crocoblock
+
+	LearnDash Group Registration
+		Version: 4.3.12
+		Author: WisdmLabs
+
+	LearnDash Licensing &amp; Management
+		Version: 1.3.1.1
+		Author: LearnDash
+
+	LearnDash LMS
+		Version: 4.15.2
+		Author: LearnDash
+
+	LearnDash LMS - Certificate Builder
+		Version: 1.1.0
+		Author: LearnDash
+
+	LearnDash LMS - Course Grid
+		Version: 2.0.9
+		Author: LearnDash
+
+	LearnDash LMS - Elementor
+		Version: 1.0.9.1
+		Author: LearnDash
+
+	LearnDash LMS - ProPanel
+		Version: 2.2.2
+		Author: LearnDash
+
+	LearnDash LMS - WooCommerce Integration
+		Version: 2.0.0.1
+		Author: LearnDash
+
+	LivIcons Evolution
+		Version: 2.10.387
+		Author: DeeThemes
+
+	NMI for Woocommerce
+		Version: 1.6
+		Author: Pluginsmaker.
+
+	Options for Twenty Twenty-One
+		Version: 1.7.7
+		Author: Webd Ltd
+
+	Security by CleanTalk
+		Version: 2.141
+		Author: CleanTalk Security
+
+	Simple Registration for WooCommerce
+		Version: 1.5.6
+		Author: Astoundify
+
+	Tin Canny Reporting for LearnDash
+		Version: 4.4.0.2
+		Author: Uncanny Owl
+
+	Title Remover
+		Version: 1.2.1
+		Author: WPGurus
+
+	Uncanny Continuing Education Credits
+		Version: 3.3.1
+		Author: Uncanny Owl
+
+	Uncanny Toolkit for LearnDash
+		Version: 3.7.0.1
+		Author: Uncanny Owl
+
+	Uncanny Toolkit Pro for LearnDash
+		Version: 3.7.10
+		Author: Uncanny Owl
+
+	User Menus
+		Version: 1.3.2
+		Author: Code Atlantic
+
+	Visibility Logic for Elementor
+		Version: 2.3.5.1
+		Author: StaxWP
+
+	WooCommerce
+		Version: 9.1.4
+		Author: Automattic
+
+	WooCommerce Shipping &amp; Tax
+		Version: 2.8.0
+		Author: WooCommerce
+
+	WooCommerce Store Credit
+		Version: 4.2.5
+		Author: Themesquad
+
+	WP Mail SMTP
+		Version: 4.1.1
+		Author: WP Mail SMTP
+
+	WP NMI Gateway PCI for WooCommerce
+		Version: 1.2.1
+		Author: Pledged Plugins
+
+
+== Must-Use Plugins ==
+	Kinsta Must-use Plugins
+		Version: 3.1.1
+		Author: Kinsta Team
+
+	LearnDash LMS Multisite
+		Version: 1.0.0
+		Author: LearnDash
+
+	Security by CleanTalk: Must-Use Module
+		Version: 2.0
+		Author: CleanTalk Security
+
+
+== Elements Usage ==
+	
+	page : 3
+		eicon-woocommerce : 1
+		heading : 1
+	section : 23
+		button : 13
+		heading : 19
+		icon : 6
+		icon-box : 1
+		shortcode : 30
+		text-editor : 3
+	wp-page : 59
+		button : 125
+		eael-adv-tabs : 5
+		eael-login-register : 1
+		eicon-woocommerce : 14
+		heading : 52
+		html : 6
+		icon : 1
+		shortcode : 28
+		text-editor : 55
+	jet-woo-builder-thankyou : 0
+		button : 1
+		icon-box : 1
+		jet-thankyou-order : 1
+		shortcode : 3
+	jet-woo-builder-shop : 0
+		divider : 1
+		eicon-woocommerce : 12
+		html : 1
+		jet-woo-builder-products-ordering : 12
+		jet-woo-builder-products-pagination : 1
+		jet-woo-builder-products-result-count : 12
+	jet-woo-builder-checkout : 0
+		icon-box : 1
+		jet-checkout-billing : 1
+		jet-checkout-login-form : 1
+
+
+== Settings ==
+	
+	cpt_support: post, page, jet-woo-builder, product, sfwd-courses, sfwd-lessons, sfwd-topic, sfwd-quiz, sfwd-certificates, groups, jet-woo-builder
+	allow_tracking: yes
+	unfiltered_files_upload: 1
+	load_fa4_shim: yes
+
+
+== Features ==
+	Custom Fonts: 0
+	Custom Icons: 0
+
+== Integrations ==
+	
+	recaptcha_v3: Active
+	woocommerce: Active
+
+
+== Elementor Experiments ==
+	Improved CSS Loading: Active by default
+	Inline Font Icons: Inactive by default
+	Additional Custom Breakpoints: Active by default
+	Flexbox Container: Inactive by default
+	Grid Container: Active by default
+	Upgrade Swiper Library: Active by default
+	Nested Elements Performance: Active by default
+	Optimized Control Loading: Inactive by default
+	Optimized Markup: Inactive by default
+	Plugin Onboarding: Active by default
+	Default to New Theme Builder: Active by default
+	Elementor Home Screen: Active by default
+	Editor Top Bar: Inactive by default
+	Build with AI: Active by default
+	Landing Pages: Active by default
+	Nested Elements: Inactive by default
+	Lazy Load Background Images: Active by default
+	Element Caching: Inactive by default
+	Link In Bio: Inactive by default
+	Floating Buttons: Inactive by default
+	Elementor Editor Events: Inactive by default
+	Display Conditions: Active by default
+	Form Submissions: Active by default
+	Menu: Inactive by default
+	Taxonomy Filter: Active by default
+	Search: Inactive by default
+
+
+== Log ==
+	
+Log: showing 20 of 382024-07-24 01:38:58 [info] Elementor data updater process has been queued. [array (
+  'plugin' => 'Elementor Pro',
+  'from' => '3.23.0',
+  'to' => '3.23.1',
+)]
+2024-07-24 01:39:01 [info] elementor::elementor_updater Started 
+2024-07-24 01:39:01 [info] Elementor/Upgrades - _on_each_version Start  
+2024-07-24 01:39:02 [info] Elementor/Upgrades - _on_each_version Finished 
+2024-07-24 01:39:02 [info] Elementor/Upgrades - _on_each_version Start  
+2024-07-24 01:39:02 [info] elementor-pro::elementor_pro_updater Started 
+2024-07-24 01:39:02 [info] Elementor Pro/Upgrades - _on_each_version Start  
+2024-07-24 01:39:02 [info] Elementor Pro/Upgrades - _on_each_version Finished 
+2024-07-24 01:39:02 [info] Elementor data updater process has been completed. [array (
+  'plugin' => 'Elementor Pro',
+  'from' => '3.23.0',
+  'to' => '3.23.1',
+)]
+2024-07-24 01:39:02 [info] Elementor data updater process has been completed. [array (
+  'plugin' => 'Elementor',
+  'from' => '3.23.1',
+  'to' => '3.23.2',
+)]
+2024-07-24 01:39:04 [info] Elementor data updater process has been queued. [array (
+  'plugin' => 'Elementor',
+  'from' => '3.23.1',
+  'to' => '3.23.2',
+)]
+2024-08-06 03:46:16 [info] Elementor data updater process has been queued. [array (
+  'plugin' => 'Elementor Pro',
+  'from' => '3.23.1',
+  'to' => '3.23.3',
+)]
+2024-08-06 03:46:17 [info] elementor-pro::elementor_pro_updater Started 
+2024-08-06 03:46:17 [info] Elementor Pro/Upgrades - _on_each_version Start  
+2024-08-06 03:46:17 [info] Elementor Pro/Upgrades - _on_each_version Finished 
+2024-08-06 03:46:17 [info] Elementor data updater process has been completed. [array (
+  'plugin' => 'Elementor Pro',
+  'from' => '3.23.1',
+  'to' => '3.23.3',
+)]
+2024-09-05 09:08:43 [info] elementor::elementor_updater Started 
+2024-09-05 09:08:43 [info] Elementor/Upgrades - _on_each_version Start  
+2024-09-05 09:08:44 [info] Elementor/Upgrades - _on_each_version Finished 
+2024-09-05 09:08:44 [info] Elementor data updater process has been completed. [array (
+  'plugin' => 'Elementor',
+  'from' => '3.23.2',
+  'to' => '3.23.4',
+)]
+
+PHP: showing 4 of 4PHP: 2024-08-06 09:50:20 [error X 396][/www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/includes/controls/base-multiple.php::61] Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]
+PHP: 2024-08-09 07:31:42 [error X 250][/www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/includes/base/widget-base.php::198] Allowed memory size of 268435456 bytes exhausted (tried to allocate 81920 bytes) [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]
+PHP: 2024-08-12 17:15:40 [error X 81][/www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/includes/base/controls-stack.php::2231] Allowed memory size of 268435456 bytes exhausted (tried to allocate 40960 bytes) [array (
+  'trace' => '
+#0: Elementor\Core\Logger\Manager -> shutdown()
+',
+)]
+PHP: 2024-08-23 08:21:52 [warning X 5][/www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/includes/template-library/sources/local.php::669] Attempt to read property &quot;display_name&quot; on bool [array (
+  'trace' => '
+#0: /www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/includes/template-library/sources/local.php(669): Elementor\Core\Logger\Manager -> rest_error_handler()
+#1: /www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/includes/template-library/sources/local.php(472): Elementor\TemplateLibrary\Source_Local -> get_item()
+#2: /www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor-pro/core/app/modules/site-editor/data/endpoints/templates.php(56): Elementor\TemplateLibrary\Source_Local -> get_items()
+#3: /www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/data/base/endpoint.php(158): ElementorPro\Core\App\Modules\SiteEditor\Data\Endpoints\Templates -> get_items()
+#4: /www/staffdevelopmentsolutions_521/public/wp-content/plugins/elementor/data/base/endpoint.php(320): Elementor\Data\Base\Endpoint -> base_callback()
+',
+)]
+
+
+
+== Elementor - Compatibility Tag ==
+	
+	Elementor Pro: Compatibility not specified
+	Essential Addons for Elementor: Compatibility not specified
+	JetWooBuilder For Elementor: Compatibility not specified
+	LearnDash LMS - Elementor: Compatibility not specified
+	Visibility Logic for Elementor: Compatibility not specified
+
+== Elementor Pro - Compatibility Tag ==
+	
+
