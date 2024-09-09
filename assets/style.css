@@ -1042,11 +1042,13 @@ about-section .hlighlighs {
 .value-section {
   padding: var(--section-spacing);
 }
+
 .value-section h3 {
   font-size: 2.5rem;
   color: var(--black-color);
   margin-bottom: 0.3em;
 }
+
 .value-section p {
   font-size: 1.3rem;
   color: var(--black-color);
@@ -1066,16 +1068,19 @@ about-section .hlighlighs {
   width: 60px;
   object-fit: contain;
 }
+
 .value-cards-wrapperr .value-card h4 {
   font-size: 1.6rem;
   margin-top: 30px;
   font-weight: 500;
   color: var(--primary-color);
 }
+
 .value-cards-wrapperr .value-card p {
   font-size: 1.1rem;
 }
 
+ 
 /* /contact */
 
 /* Left Container */
@@ -1167,4 +1172,149 @@ button:hover {
   background-color: #111;
   color: #fff;
   transition: all 0.5s ease;
+=======
+/* Footer section styling here */
+.footer-section {
+  background-color: var(--primary-color);
+  padding: var(--section-spacing);
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.6fr 1fr;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  color: var(--white-color);
+}
+
+.footer-wrapper h5 {
+  font-size: 1.35rem;
+  font-family: var(--font-bold);
+  margin-bottom: 1rem;
+}
+
+.footer-company-profile {
+  max-width: 350px;
+}
+
+.footer-company-profile img {
+  width: 9.5rem;
+  height: auto;
+  margin-block-end: 1.25rem;
+}
+
+.footer-company-profile p {
+  font-size: 1.075rem;
+  color: var(--white-color);
+  font-family: var(--font-regular);
+}
+
+.footer-services a,
+.footer-our-pages a,
+.footer-contact a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: var(--font-regular);
+  font-size: 1.075rem;
+}
+
+.footer-services li,
+.footer-our-pages li,
+.footer-contact li {
+  margin-block-end: 0.6rem;
+}
+
+.footer-services ul,
+.footer-our-pages ul,
+.footer-contact ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-contact span svg path {
+  fill: var(--white-color);
+}
+
+.footer-contact span svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-contact li a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.copyright-footer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#footer-copyright {
+  font-size: 0.9rem;
+  color: var(--white-color);
+}
+
+.footer-social-links svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social-links svg path {
+  fill: var(--white-color);
+}
+
+/* Footer newsletter form styling here */
+.newsletter-form {
+  background-color: var(--white-color);
+  border-radius: 5rem;
+  width: 100%;
+  margin-block-start: 2.5rem;
+}
+
+.newsletter-form form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.newsletter-form form input {
+  font-family: var(--font-regular);
+  font-size: 1rem;
+  flex-basis: 80%;
+  border-radius: 3rem;
+  padding-inline: 1.2rem;
+  padding-block: 0.9rem;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form form .subscribed-newsletter {
+  flex-basis: 20%;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  margin-inline-end: 0.1rem;
+}
+
+.newsletter-form form .subscribed-newsletter svg {
+  width: 1.375rem;
+  height: 100%;
+ 
 }
