@@ -42,6 +42,13 @@ setIcon("budgetFriendly", "#4361ee", ".budget-friendly");
 setIcon("elearningExperts", "#4361ee", ".elearning-experts");
 setIcon("nextArrow", "#4361ee", ".goto-source");
 setIcon("nextArrow", "white", ".subscribed-newsletter");
+setIcon("facebookIcon", "white", ".footer-facebook");
+setIcon("instagramIcon", "white", ".footer-instagram");
+setIcon("xIcon", "white", ".footer-twitter");
+setIcon("linkedinIcon", "white", ".footer-linkedin");
+setIcon("phoneIcon", "white", ".footer-email-icon");
+setIcon("mailIcons", "white", ".footer-call-icon");
+setIcon("locationIcon", "white", ".footer-location-icon");
 
 //Here is counter login code
 function animateCounter(counter) {
@@ -174,3 +181,8 @@ const logoRefLink = document.querySelector(".site-logo");
 logoRefLink.addEventListener("click", () => {
   window.location.href = relURL.Home;
 });
+
+const copyrightText = document.querySelector("#footer-copyright");
+const currentTime = new Date();
+let fullYear = currentTime.getFullYear();
+copyrightText.textContent = `Copyright ©${fullYear} MoreLearning All Rights Reserved`;
