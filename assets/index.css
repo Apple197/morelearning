@@ -2,7 +2,6 @@
 @import "./style.css";
 @import "./font/font.css";
 @import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
-
 @import "./responsive.css";
 
 /* CSS Variables Declaration Here */
@@ -182,4 +181,29 @@ a {
 
 #learn-button.black::after {
   background-color: #000;
+}
+
+@media screen and (max-width: 991px) {
+  /* Declear variable again for mobile responsiveness */
+  :root {
+    --border-radius: 6.875rem;
+    --section-spacing: 2.5rem 0;
+    --corner-roundness: 0.9375rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

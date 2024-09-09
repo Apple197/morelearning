@@ -1,8 +1,21 @@
 import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js";
 import "https://unpkg.com/lenis@1.1.9/dist/lenis.min.js";
 import { Swiper } from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+import { global_elements } from "./module/globalElements.js";
 import { recievedData, sentData } from "./module/communicate.js";
 import { setIcon } from "./module/icons.js";
+
+//Add Header Footer in the site
+const header = document.querySelector("#header");
+const footer = document.querySelector("#footer");
+
+header.innerHTML = global_elements.header;
+footer.innerHTML = global_elements.footer;
+
+const copyrightText = document.querySelector("#footer-copyright");
+const currentTime = new Date();
+let fullYear = currentTime.getFullYear();
+copyrightText.textContent = `Copyright ©${fullYear} MoreLearning All Rights Reserved`;
 
 //Initiate Lines for Scroll Smooth in JS
 const lenis = new Lenis();
@@ -121,68 +134,3 @@ const TruetedBy = new Swiper(".swiper .left-carousel", {
   centerInsufficientSlides: true,
   speed: 3000,
 });
-
-function getWebLink(pageUrl, which = "email") {
-  if (which === "pages") {
-    return `${window.location.protocol}//${window.location.host}/${pageUrl}`;
-  } else if (which === "whatsapp") {
-    return `https://wa.me/${pageUrl}`;
-  } else if (which === "call") {
-    return `tel:${pageUrl}`;
-  } else {
-    return `mailto:${pageUrl}`;
-  }
-}
-
-//Get all url
-const relURL = {
-  Home: getWebLink("", "pages"),
-  About: getWebLink("about.html", "pages"),
-  Contact: getWebLink("contact.html", "pages"),
-  Ourwork: getWebLink("our-work.html", "pages"),
-  Blog: getWebLink("blogs/", "pages"),
-  Temblog: `https://morestudios.in/blogs/`,
-  Corporatevideosolutions: getWebLink(
-    "corporate-video-solutions.html",
-    "pages"
-  ),
-  Marketingvideosolutions: getWebLink(
-    "marketing-video-solutions.html",
-    "pages"
-  ),
-  Animatedvideosolutions: getWebLink("animated-video-solutions.html", "pages"),
-  Educationalandtrainingsolutions: getWebLink(
-    "educational-and-training-solutions.html",
-    "pages"
-  ),
-  Call: getWebLink("+919773547193", "call"),
-  Email: getWebLink("contact@morestudios.in"),
-  whatsapp: getWebLink("919773547193", "whatsapp"),
-  facebookLink: "https://www.facebook.com/people/MoreStudios/61551484257691/",
-  xLink: "https://x.com/morestudio8",
-  instagramLink: "https://www.instagram.com/morestudios8/",
-  linkedinLink: "https://www.linkedin.com/company/morestudios",
-  location: "https://maps.app.goo.gl/MpzWVyHaGaxy8Cvr6",
-  site__logo: getWebLink("assets/images/logo.webp", "pages"),
-  tem_site_logo: "https://morestudios-v3.netlify.app/assets/images/logo.webp",
-};
-
-const global_elements = {
-  header: `<div class="container-fuild px-xl-5 px-4"><div class="site-logo"><img src="${relURL.tem_site_logo}" alt="Morestudios logo"></div><nav class="navigation"><ul><li><a href="${relURL.Home}">Home</a></li><li><a href="${relURL.About}">About</a></li><li><a href="${relURL.Ourwork}">Our Work</a></li><li class="under-sub-menu"><span>Services<span class="sub-menu-arrow"></span></span><ul class="sub-menu"><li><a href="${relURL.Corporatevideosolutions}"><span class="corporate-video-icon"></span>Corporate Video Solutions  </a></li><li><a href="${relURL.Marketingvideosolutions}"><span class="animation-video-icon"></span>Animated Video Solutions</a></li><li><a href="${relURL.Animatedvideosolutions}"><span class="product-video-icon"></span>Marketing Video Solutions</a></li><li><a href="${relURL.Educationalandtrainingsolutions}"><span class="social-media-video-icon"></span>Educational and Training Solutions</a></li></ul></li><li><a href="${relURL.Temblog}">Blog</a></li><li><a href="${relURL.Contact}">Contact</a></li></ul></nav><div class="call-to-action-header"><a href="${relURL.Call}" class="site-button primary-button">Connect Now</a></div><div class="mobile-menu"><span></span><span></span><span></span></div></div>`,
-  footer: ``,
-};
-
-const header = document.querySelector("#header");
-header.innerHTML = global_elements.header;
-const footer = document.querySelector("#footer");
-footer.innerHTML = global_elements.footer;
-
-const logoRefLink = document.querySelector(".site-logo");
-logoRefLink.addEventListener("click", () => {
-  window.location.href = relURL.Home;
-});
-
-const copyrightText = document.querySelector("#footer-copyright");
-const currentTime = new Date();
-let fullYear = currentTime.getFullYear();
-copyrightText.textContent = `Copyright ©${fullYear} MoreLearning All Rights Reserved`;
