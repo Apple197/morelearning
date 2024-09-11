@@ -734,3 +734,103 @@
   width: 1.25rem;
   height: 1.25rem;
 }
+
+/* portfolio section starting from here  */
+.portfolio-hero-section {
+  background-color: var(--secondary-color);
+  border-radius: 0 0 0 var(--border-radius);
+  padding: 80px 0 0 0;
+  display: grid;
+  align-items: end;
+}
+
+.portfolio-hero-section .portfolio-hero-content {
+  max-width: 37.5rem;
+}
+
+.hero-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Here is the showreel section */
+.showreel-section {
+  padding: var(--section-spacing);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.video-card {
+  cursor: pointer;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--corner-roundness);
+  transition: transform 0.6s ease;
+}
+
+.video-card img:hover {
+  transform: scale(1.05);
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.popup-video {
+  width: 100%;
+}
+
+.overlay-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  opacity: 0;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  text-align: center;
+}
+
+.overlay-content .video-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-content .video-description {
+  font-size: 1rem;
+}
+
+.video-card:hover .overlay-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
