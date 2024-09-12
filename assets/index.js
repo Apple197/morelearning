@@ -122,6 +122,7 @@ setIcon("phoneIcon", "white", ".footer-email-icon");
 setIcon("mailIcons", "white", ".footer-call-icon");
 setIcon("locationIcon", "white", ".footer-location-icon");
 setIcon("dropdownArrow", "black", ".sub-menu-arrow");
+setIcon("videoPlayIcon", "white", ".video-play-icon");
 
 //Here is counter login code
 function animateCounter(counter) {

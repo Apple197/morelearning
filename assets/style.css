@@ -767,6 +767,7 @@
 
 .video-card {
   cursor: pointer;
+  position: relative;
 }
 
 .video-card img {
@@ -775,6 +776,18 @@
   object-fit: cover;
   border-radius: var(--corner-roundness);
   transition: transform 0.6s ease;
+}
+
+.video-card span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-card span svg {
+  width: 5rem;
+  height: 5rem;
 }
 
 .video-card img:hover {
