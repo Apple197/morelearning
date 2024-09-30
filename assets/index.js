@@ -5,9 +5,6 @@ import { global_elements } from "./module/globalElements.js";
 import { recievedData, sentData } from "./module/communicate.js";
 import { setIcon } from "./module/icons.js";
 
-const swiper = new Swiper();
-console.log(swiper);
-
 //Here is header code
 const header = document.querySelector("#header");
 header.innerHTML = global_elements.header;
@@ -123,6 +120,20 @@ setIcon("mailIcons", "white", ".footer-call-icon");
 setIcon("locationIcon", "white", ".footer-location-icon");
 setIcon("dropdownArrow", "black", ".sub-menu-arrow");
 setIcon("videoPlayIcon", "white", ".video-play-icon");
+setIcon("healthcareIcon", "#4361ee", ".healthcare-icon");
+setIcon("technologyIcon", "#4361ee", ".technology-icon");
+setIcon("consultancyIcon", "#4361ee", ".consultancy-icon");
+setIcon("logisticsIcon", "#4361ee", ".logistics-icon");
+setIcon("miningIcon", "#4361ee", ".mining-icon");
+setIcon("educationIcon", "#4361ee", ".education-icon");
+setIcon("nextAndPreviousButton", "black", ".previous-icon");
+setIcon("nextAndPreviousButton", "black", ".next-icon");
+setIcon("learnerCenter", "#4361ee", ".learner-centered-icon");
+setIcon("innovationDriven", "#4361ee", ".innovation-driven-icon");
+setIcon("resultOriented", "#4361ee", ".results-oriented-icon");
+setIcon("passionateExperts", "#4361ee", ".passionate-experts-icon");
+setIcon("clientCentricApproach", "#4361ee", ".client-centric-approach-icon");
+
 
 //Here is counter login code
 function animateCounter(counter) {
@@ -166,25 +177,29 @@ counters.forEach((counter) => {
   observer.observe(counter);
 });
 
-//Logo Carousel Swiper Here
-const leftClient = document.querySelector(".left-carousel");
 
-if (leftClient) {
-  const TruetedBy = new Swiper(leftClient, {
+//Logo Carousel Swiper Here
+const clientLogo = document.querySelector(".clients-logos");
+if (clientLogo) {
+  const slickCarousel = new Swiper(clientLogo, {
     direction: "horizontal",
     loop: true,
     slidesPerView: 2,
+    spaceBetween: 10,
     simulateTouch: false,
     centeredSlides: true,
     breakpoints: {
-      986: {
+      1200: {
+        slidesPerView: 7,
+        spaceBetween: 20,
+      },
+      992: {
         slidesPerView: 5,
+        spaceBetween: 20,
       },
-      786: {
-        slidesPerView: 4,
-      },
-      586: {
-        slidesPerView: 4,
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
     },
     autoplay: {
@@ -194,8 +209,46 @@ if (leftClient) {
       disableOnInteraction: false,
     },
     centerInsufficientSlides: true,
-    speed: 3000,
+    speed: 5000,
   });
-} else {
-  console.log("Not Found");
+}
+
+//Testimnonial Carousel Swiper Here
+const testimonialCarousel = document.querySelector('.testimonial-section .swiper');
+const testimonialCarouselServices = document.querySelector('.testimonial-section-services .swiper');
+
+testimonialSlider(testimonialCarousel);
+testimonialSlider(testimonialCarouselServices);
+
+function testimonialSlider(wrapper){
+  if(wrapper){
+    new Swiper(wrapper, {
+       loop: true,
+       slidesPerView: 1,
+       spaceBetween: 20,
+       autoplay: {
+           delay: 2000,
+           disableOnInteraction: false,
+       },
+       speed: 500,
+       breakpoints: {
+           1200: {
+               slidesPerView: 3,
+               spaceBetween: 30
+           },
+           991: {
+               slidesPerView: 2,
+               spaceBetween: 30
+           },
+           768: {
+               slidesPerView: 1,
+               spaceBetween: 10
+           }
+       },
+       navigation: {
+           nextEl: '.swiper-button-nex',
+           prevEl: '.swiper-button-pre',
+       }
+   });
+  }
 }
