@@ -2,7 +2,7 @@ import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.mi
 import "https://unpkg.com/lenis@1.1.9/dist/lenis.min.js";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 import { global_elements } from "./module/globalElements.js";
-import { recievedData, sentData } from "./module/communicate.js";
+//import { recievedData, sentData } from "./module/communicate.js";
 import { setIcon } from "./module/icons.js";
 
 //Here is header code
@@ -88,6 +88,7 @@ requestAnimationFrame(raf);
 
 //Initiate the icon here
 setIcon("nextArrow", "white", ".next-arrow");
+setIcon("nextArrow", "black", ".next-arrow-black");
 setIcon("customLearning", "white", ".custom-elearning-development");
 setIcon("rapidLearning", "white", ".rapid-elearning");
 setIcon("mobileLearning", "white", ".Mobile-elearning");
@@ -133,7 +134,7 @@ setIcon("innovationDriven", "#4361ee", ".innovation-driven-icon");
 setIcon("resultOriented", "#4361ee", ".results-oriented-icon");
 setIcon("passionateExperts", "#4361ee", ".passionate-experts-icon");
 setIcon("clientCentricApproach", "#4361ee", ".client-centric-approach-icon");
-
+setIcon("downArrow", "black", ".down-arrow-icon");
 
 //Here is counter login code
 function animateCounter(counter) {
@@ -177,7 +178,6 @@ counters.forEach((counter) => {
   observer.observe(counter);
 });
 
-
 //Logo Carousel Swiper Here
 const clientLogo = document.querySelector(".clients-logos");
 if (clientLogo) {
@@ -214,41 +214,76 @@ if (clientLogo) {
 }
 
 //Testimnonial Carousel Swiper Here
-const testimonialCarousel = document.querySelector('.testimonial-section .swiper');
-const testimonialCarouselServices = document.querySelector('.testimonial-section-services .swiper');
+const testimonialCarousel = document.querySelector(
+  ".testimonial-section .swiper"
+);
+const testimonialCarouselServices = document.querySelector(
+  ".testimonial-section-services .swiper"
+);
 
 testimonialSlider(testimonialCarousel);
 testimonialSlider(testimonialCarouselServices);
 
-function testimonialSlider(wrapper){
-  if(wrapper){
+function testimonialSlider(wrapper) {
+  if (wrapper) {
     new Swiper(wrapper, {
-       loop: true,
-       slidesPerView: 1,
-       spaceBetween: 20,
-       autoplay: {
-           delay: 2000,
-           disableOnInteraction: false,
-       },
-       speed: 500,
-       breakpoints: {
-           1200: {
-               slidesPerView: 3,
-               spaceBetween: 30
-           },
-           991: {
-               slidesPerView: 2,
-               spaceBetween: 30
-           },
-           768: {
-               slidesPerView: 1,
-               spaceBetween: 10
-           }
-       },
-       navigation: {
-           nextEl: '.swiper-button-nex',
-           prevEl: '.swiper-button-pre',
-       }
-   });
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      speed: 500,
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-nex",
+        prevEl: ".swiper-button-pre",
+      },
+    });
   }
+}
+
+const faq = document.querySelectorAll(".faq");
+
+if (faq) {
+  faq.forEach((element, index) => {
+    let faqTrack = element.querySelector(".faq-ask");
+    let faqAnswer = element.querySelector(".faq-answer");
+
+    faqTrack.addEventListener("click", () => {
+      let openFaq = faqAnswer.scrollHeight;
+      element.classList.toggle("active");
+
+      if (element.classList.contains("active")) {
+        faqAnswer.style.height = `${openFaq}px`;
+      } else {
+        faqAnswer.style.height = 0;
+      }
+      collapse(index);
+    });
+  });
+
+  const collapse = (index) => {
+    faq.forEach((collapseElement, collapseIndex) => {
+      let collapseFaqAnswer = collapseElement.querySelector(".faq-answer");
+      if (collapseIndex != index) {
+        collapseElement.classList.remove("active");
+        collapseFaqAnswer.style.height = 0;
+      }
+    });
+  };
 }

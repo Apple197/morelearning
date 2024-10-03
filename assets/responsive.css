@@ -11,10 +11,18 @@
     grid-column: 1/-1;
   }
 
-  .services-hero-section{
+  .services-hero-section {
     padding: 130px 0 0 0;
   }
 
+  /* ========================== Start New Page responsive styling here custom elearning development ========================= */
+  .gridcolumns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -227,5 +235,37 @@
   .footer-company-profile,
   .footer-services {
     grid-column: span 2;
+  }
+
+  /* ========================== Start New Page responsive styling here custom elearning development ========================= */
+  .content h5 {
+    font-size: 1rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    color: var(--black-color);
+    margin-top: 30px;
+  }
+
+  .info h3 {
+    font-size: 2rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .gridcolumns {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+
+  .cards {
+    grid-template-columns: 1fr; /* 1 column */
   }
 }
