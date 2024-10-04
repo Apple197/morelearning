@@ -295,6 +295,10 @@
   }
 
   /* Our Process section responsive styling here */
+  .our-process {
+    overflow-x: hidden;
+  }
+
   .our-process h3 {
     font-size: 2rem;
   }
@@ -306,7 +310,6 @@
   .process-card {
     width: 19.25rem;
     margin-inline: auto;
-    overflow-x: hidden;
   }
 
   .process-card:nth-child(2),
