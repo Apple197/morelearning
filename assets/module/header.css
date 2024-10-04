@@ -143,7 +143,6 @@
 
 .for-active-nav {
   /* FOR CHANGE ACTIVE BG OF SUBMENU  */
-  background-color: ;
   backdrop-filter: blur(15px);
   z-index: 5;
   width: 100%;
