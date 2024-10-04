@@ -1159,9 +1159,15 @@
   translate: 0 -4rem;
 }
 
+.for-why-choose-subservices {
+  border-radius: 0 var(--border-radius) 0 0;
+}
+
 /* Call to action section styling here */
 .cta-section {
-  padding-block: 6rem;
+  padding-block: 8rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .cta-section h3 {
@@ -1179,10 +1185,34 @@
   margin-inline-start: 1.5rem;
 }
 
+.cta-services-elements img:nth-child(1) {
+  max-width: 25rem;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  rotate: -12.5deg;
+}
+
+.cta-services-elements img:nth-child(2) {
+  max-width: 15rem;
+  position: absolute;
+  top: -12.5%;
+  left: 50%;
+  translate: -50% 0;
+}
+
+.cta-services-elements img:nth-child(3) {
+  max-width: 20rem;
+  position: absolute;
+  bottom: -25%;
+  right: 0%;
+}
+
 /* Here is the FAQ styling */
 .faq-section {
   background-color: var(--secondary-color);
   padding: var(--section-spacing);
+  border-radius: var(--border-radius) 0 0 0;
 }
 
 .faq-section h3 {
