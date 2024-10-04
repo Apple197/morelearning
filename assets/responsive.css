@@ -170,9 +170,12 @@
   }
 
   /* Here is the Service section responsive styling */
-  .services-section h3,
-  .feature-section h3 {
+  .services-section h3 {
     font-size: 2rem;
+  }
+
+  .feature-section h3 {
+    font-size: 1.75rem;
   }
 
   .services-section p {
@@ -353,5 +356,13 @@
 
   .faq-questions {
     margin-top: 1rem;
+  }
+
+  .faq .faq-ask h5 {
+    font-size: 1rem;
+  }
+
+  .faq .faq-answer p {
+    font-size: 0.9rem;
   }
 }
