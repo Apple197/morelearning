@@ -124,11 +124,22 @@
   height: 3rem;
   min-width: 3rem;
   border-radius: 50%;
+  position: relative;
+  transition: all 0.6s ease;
 }
 
 .sub-menu a span svg {
-  width: 2.25rem;
-  height: auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub-menu a span svg path {
+  fill: var(--primary-color);
+  transition: all 0.6s ease;
 }
 
 .sub-menu li {
@@ -136,14 +147,23 @@
   transition: all 0.6s linear;
 }
 
-.sub-menu li:hover {
-  background-color: var(--secondary-color);
+.sub-menu li:hover span {
+  background-color: var(--primary-color);
+}
+
+.sub-menu li:hover span svg path {
+  fill: var(--white-color);
+}
+
+.sub-menu li:hover a {
+  color: var(--primary-color);
   border-radius: 15px;
 }
 
 .for-active-nav {
   /* FOR CHANGE ACTIVE BG OF SUBMENU  */
   backdrop-filter: blur(15px);
+  background-color: rgba(67, 97, 238, 0.1);
   z-index: 5;
   width: 100%;
   height: 100%;
