@@ -82,7 +82,6 @@
   border-radius: 15px;
   pointer-events: none;
   opacity: 0;
-  visibility: hidden;
   scale: 0;
   transition: all 0.6s ease;
   display: grid;
@@ -157,7 +156,6 @@
 
 .sub-menu li:hover a {
   color: var(--primary-color);
-  border-radius: 15px;
 }
 
 .for-active-nav {
@@ -217,7 +215,6 @@
 
 /* Sub menu active css here */
 .active__submenu .navigation .sub-menu {
-  visibility: visible;
   opacity: 1;
   pointer-events: all;
   scale: 1;

@@ -135,6 +135,21 @@ setIcon("resultOriented", "#4361ee", ".results-oriented-icon");
 setIcon("passionateExperts", "#4361ee", ".passionate-experts-icon");
 setIcon("clientCentricApproach", "#4361ee", ".client-centric-approach-icon");
 setIcon("downArrow", "black", ".down-arrow-icon");
+setIcon(
+  "vrarAnd360LearningExperiences",
+  "white",
+  ".arvr-360-learning-experiences"
+);
+setIcon(
+  "eLearningAndTrainingConsultancy",
+  "white",
+  ".elearning-and-training-consultancy"
+);
+setIcon(
+  "OutsourcedLearningAndDevelopment",
+  "white",
+  ".outsourced-learning-development"
+);
 
 //Here is counter login code
 function animateCounter(counter) {
