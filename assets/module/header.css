@@ -255,6 +255,7 @@
     position: fixed;
     top: 100px;
     width: calc(720px - 40px);
+    max-height: 80vh;
     background-color: var(--secondary-color);
     border-radius: 15px;
     padding: 30px;
@@ -264,6 +265,7 @@
     visibility: hidden;
     transform-origin: top right;
     pointer-events: none;
+    overflow: scroll;
   }
 
   .navigation::before {
